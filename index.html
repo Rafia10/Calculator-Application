@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="calculator.js"></script>
+</head>
+<body>
+  
+    <div clas="container "id="cal">
+       
+        <div class="row" >
+            <div class="col-sm-12">
+                <h1 id="head">Simple Calculator</h1>
+            </div>
+             <div class="col-sm-12">
+              <input type="text"placeholder="0" id="input">
+             </div>
+             <div class="col-sm-12">
+                <input type="text" id="answer"  style="color:blue">
+               </div>
+               <br>
+               <br> 
+               <br>
+               <br>
+               <div class=col-sm-2>
+                <input type="button" value="CE"  onclick="document.getElementById('input').value = ''" class="btn btn-danger">
+               </div>
+               <div class=col-sm-2>
+                <input type="button" value="&#247" id="op" onclick="operation('/')"class="btn btn-primary">
+               </div>
+               <div class=col-sm-2>
+                <input type="button" value="*" id="op" onclick="operation('*')"class="btn btn-primary">
+               </div>
+               
+               <div class=col-sm-2>
+                <input type="button" value="+" id="op" onclick="operation('+')"class="btn btn-primary">
+               </div>
+               <div class=col-sm-2>
+                <input type="button" value="-" id="op" onclick="operation('-');"class="btn btn-primary">
+               </div>
+              
+               <div class=col-sm-2>
+                <input type="button" value="." id="num" onclick="number('.')"class="btn btn-primary">
+               </div>
+               <br>
+               <br>
+               <div class=col-sm-2>
+                <input type="button" value="1" id="num" onclick="number(1)"class="btn btn-primary">
+               </div>
+               <div class=col-sm-2>
+                <input type="button" value="2" id="num" onclick="number(2)"class="btn btn-primary">
+               </div>
+               <div class=col-sm-2>
+                <input type="button" value="3" id="num" onclick="number(3)"class="btn btn-primary">
+               </div>
+               <div class=col-sm-2>
+                <input type="button" value="4" id="num" onclick="number(4)"class="btn btn-primary">
+               </div>
+               <div class=col-sm-2>
+                <input type="button" value="5" id="num" onclick="number(5)"class="btn btn-primary">
+               </div>
+               <br>
+               <br>
+               <div class=col-sm-2>
+                <input type="button" value="6" id="num" onclick="number(6)"class="btn btn-primary">
+               </div>
+               <div class=col-sm-2>
+                <input type="button" value="7" id="num" onclick="number(7)"class="btn btn-primary">
+               </div>
+               <div class=col-sm-2>
+                <input type="button" value="8" id="num" onclick="number(8)"class="btn btn-primary">
+               </div>
+               <div class=col-sm-2>
+                <input type="button" value="9" id="num" onclick="number(9)"class="btn btn-primary">
+               </div>
+               <div class=col-sm-2>
+                <input type="button" value="0" id="num" onclick="number(0)"class="btn btn-primary">
+               </div>
+               <div class=col-sm-2>
+                <input type="button" value="(" id="num" onclick="number('(')"class="btn btn-primary">
+               </div>
+               <div class=col-sm-2>
+                <input type="button" value=")" id="num" onclick="number(')')"class="btn btn-primary">
+               </div>
+               
+               <div class=col-sm-2>
+                <input type="button" value="%" id="num" onclick="number('%')"class="btn btn-primary">
+               </div>
+               <div class=col-sm-2>
+                <input type="button" id="equal" value="=" onclick="compute()"class="btn btn-primary" style="width:440px !important">
+               </div>
+              
+              
+        </div>
+    </div>
+</body>
+</html>
